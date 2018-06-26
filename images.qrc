@@ -4,5 +4,8 @@
         <file>icon/ok.png</file>
         <file>icon/warning.png</file>
         <file>icon/atm.png</file>
+        <file>icon/detail.png</file>
+        <file>icon/overview.png</file>
+        <file>icon/login.png</file>
     </qresource>
 </RCC>

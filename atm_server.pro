@@ -28,16 +28,19 @@ SOURCES += \
         mainwindow.cpp \
     devicemanager.cpp \
     udpserver.cpp \
-    runnabledevproc.cpp
+    runnabledevproc.cpp \
+    loginwindow.cpp
 
 HEADERS += \
         mainwindow.h \
     devicemanager.h \
     udpserver.h \
-    runnabledevproc.h
+    runnabledevproc.h \
+    loginwindow.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    loginwindow.ui
 
 RESOURCES += \
     images.qrc

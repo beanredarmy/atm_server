@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>PHẦN MỀM QUẢN LÝ THIẾT BỊ TẬP TRUNG</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/img/icon/atm.png</normaloff>:/img/icon/atm.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="font">
@@ -24,7 +28,7 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="softwareNameLabel">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -51,7 +55,7 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QTabWidget" name="horizontalTabWidget">
+     <widget class="QTabWidget" name="mainTabWidget">
       <property name="font">
        <font>
         <family>Times New Roman</family>
@@ -63,21 +67,21 @@
       <property name="currentIndex">
        <number>1</number>
       </property>
-      <widget class="QWidget" name="tab_5">
+      <widget class="QWidget" name="overviewTab">
        <attribute name="title">
-        <string>TỔNG QUAN</string>
+        <string/>
        </attribute>
       </widget>
-      <widget class="QWidget" name="horizontalTabWidgetPage1">
+      <widget class="QWidget" name="detailTab">
        <property name="enabled">
         <bool>true</bool>
        </property>
        <attribute name="title">
-        <string>CHI TIẾT</string>
+        <string/>
        </attribute>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QWidget" name="verticalWidget" native="true">
+         <widget class="QWidget" name="deviceListTab" native="true">
           <property name="font">
            <font>
             <family>Times New Roman</family>
@@ -86,7 +90,7 @@
           </property>
           <layout class="QVBoxLayout" name="verticalLayout">
            <item>
-            <widget class="QLabel" name="label_2">
+            <widget class="QLabel" name="deviceListLabel">
              <property name="font">
               <font>
                <family>Times New Roman</family>
@@ -100,7 +104,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="listWidget">
+            <widget class="QListWidget" name="deviceListWidget">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
                <horstretch>0</horstretch>
@@ -145,7 +149,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QWidget" name="verticalWidget_2" native="true">
+         <widget class="QWidget" name="configAndInfoTab" native="true">
           <property name="font">
            <font>
             <family>Times New Roman</family>
@@ -153,7 +157,7 @@
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
-            <widget class="QTabWidget" name="tabWidget">
+            <widget class="QTabWidget" name="configureTabWidget">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                <horstretch>0</horstretch>
@@ -181,12 +185,12 @@
              <property name="tabsClosable">
               <bool>false</bool>
              </property>
-             <widget class="QWidget" name="tab">
+             <widget class="QWidget" name="deviceInfoTab">
               <attribute name="title">
                <string>Thông tin thiết bị</string>
               </attribute>
              </widget>
-             <widget class="QWidget" name="tab_2">
+             <widget class="QWidget" name="configTab">
               <attribute name="title">
                <string>Cấu hình thiết bị</string>
               </attribute>
@@ -389,13 +393,13 @@
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="tab_3">
+             <widget class="QWidget" name="warningModeTab">
               <attribute name="title">
                <string>Chế độ cảnh báo</string>
               </attribute>
               <layout class="QVBoxLayout" name="verticalLayout_3">
                <item>
-                <widget class="QWidget" name="widget" native="true">
+                <widget class="QWidget" name="warningSensorWidget1" native="true">
                  <property name="font">
                   <font>
                    <family>Times New Roman</family>
@@ -814,7 +818,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QWidget" name="widget_2" native="true">
+                <widget class="QWidget" name="warningSensorWidget2" native="true">
                  <property name="font">
                   <font>
                    <family>Times New Roman</family>
@@ -1442,7 +1446,7 @@
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="tab_4">
+             <widget class="QWidget" name="noteTab">
               <attribute name="title">
                <string>Nhật ký cảnh báo</string>
               </attribute>
@@ -1450,7 +1454,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QGroupBox" name="groupBox">
+            <widget class="QGroupBox" name="infoGroupBox">
              <property name="font">
               <font>
                <family>Times New Roman</family>
