@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     devicemanager.cpp \
-    udpserver.cpp
+    udpserver.cpp \
+    runnabledevproc.cpp
 
 HEADERS += \
         mainwindow.h \
     devicemanager.h \
-    udpserver.h
+    udpserver.h \
+    runnabledevproc.h
 
 FORMS += \
         mainwindow.ui
